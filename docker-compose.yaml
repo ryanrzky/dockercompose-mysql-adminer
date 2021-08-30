@@ -13,6 +13,7 @@ services:
       - 'db-network'
     volumes: 
       - ./database-data:/var/lib/mysql
+      - ./mysql-conf:/etc/mysql/mysql.conf.d
   
   adminer:
     image: 'adminer'
